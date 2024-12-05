@@ -107,7 +107,7 @@ let veryOldInventors = [];
 
 // Complete the exercise in the space below:
 
-veryOldInventors =  inventors.filter((inventor) => {
+veryOldInventors = inventors.filter((inventor) => {
     if (inventor.year >= 1500 && inventor.year <= 1599) {
         return inventor
     }
@@ -118,8 +118,8 @@ veryOldInventors =  inventors.filter((inventor) => {
 // Check your work:
 console.log('Exercise 1 my result: ', veryOldInventors);
 console.log('Exercise 1 correct result: ', [
-  { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
-  { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
+    { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
+    { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
 ]);
 
 
@@ -142,23 +142,25 @@ let inventorNames = [];
 
 // Complete the exercise in the space below:
 
-inventorNames = inventors.map(() => {
-
+inventorNames = inventors.map((inventor) => {
+    return {first: inventor.first, last: inventor.last};
 });
 
 // Check your work:
 console.log('Exercise 2 my result: ', inventorNames);
 console.log('Exercise 2 correct result: ', [
-  { first: 'Albert', last: 'Einstein' },
-  { first: 'Isaac', last: 'Newton' },
-  { first: 'Galileo', last: 'Galilei' },
-  { first: 'Marie', last: 'Curie' },
-  { first: 'Johannes', last: 'Kepler' },
-  { first: 'Nicolaus', last: 'Copernicus' },
-  { first: 'Max', last: 'Planck' },
-  { first: 'Katherine', last: 'Blodgett' },
-  { first: 'Ada', last: 'Lovelace' },
-  { first: 'Sarah E.', last: 'Goode' },
-  { first: 'Lise', last: 'Meitner' },
-  { first: 'Hanna', last: 'Hammarström' },
+    { first: 'Albert', last: 'Einstein' },
+    { first: 'Isaac', last: 'Newton' },
+    { first: 'Galileo', last: 'Galilei' },
+    { first: 'Marie', last: 'Curie' },
+    { first: 'Johannes', last: 'Kepler' },
+    { first: 'Nicolaus', last: 'Copernicus' },
+    { first: 'Max', last: 'Planck' },
+    { first: 'Katherine', last: 'Blodgett' },
+    { first: 'Ada', last: 'Lovelace' },
+    { first: 'Sarah E.', last: 'Goode' },
+    { first: 'Lise', last: 'Meitner' },
+    { first: 'Hanna', last: 'Hammarström' },
 ]);
+
+
